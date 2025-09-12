@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="nav-item"><a href="#">Home</a></span>
+        <span class="nav-item"><a href="#about">About</a></span>
+        <span class="nav-item"><a href="#events">Events</a></span>
+      </div>
+
+      <div class="logo">CampusConnect</div>
+
+      <div class="nav-right">
+        <span class="nav-item"><a href="#gallery">Gallery</a></span>
+        <span class="nav-item"><a href="#feedback">Feedback</a></span>
+        <span class="nav-item"><a href="#contact">Contact</a></span>
+        <span class="nav-item"><a href="#fees">Fees</a></span>
+      </div>
+
+      <!-- Toggler -->
+      <div class="toggler" id="toggler">☰</div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#contact">Contact</a>
+      <a href="#fees">Fees</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h2 class="tagline">Welcome to CampusConnect</h2> <!-- Dynamic text here -->
+      <h1>COLLEGE EVENT HUB</h1>
+
+      <p class="hero-subtext">
+        Explore exciting activities, cultural fests, and workshops designed to bring out your creativity.
+      </p>
+
+      <ul class="hero-events">
+        <li>🎤 Annual Cultural Fest</li>
+        <li>🏆 Inter-College Sports</li>
+        <li>🎨 Creative Arts & Exhibitions</li>
+        <li>💡 Tech & Innovation Workshops</li>
+      </ul>
+
+      <a href="#events" class="btn-primary">Join Now</a>
+    </div>
+
+    <div class="hero-right">
+      <div class="image-box">
+        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Event 1">
+      </div>
+      <div class="image-box">
+        <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg" alt="Event 2">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+ <!-- Upcoming Events -->
+<section class="events" id="events">
+  <h2>Upcoming Events</h2>
+  <div id="event-carousel" class="owl-carousel">
+    <!-- Events dynamically load honge -->
+  </div>
+</section>
+
+
+  <!-- Fees Section -->
+  <section class="fees" id="fees">
+    <h2>Fee Structure</h2>
+    <div class="fees-grid">
+      <div class="fee-card">
+        <h3>🎓 Admission Fee</h3>
+        <p>$500 (one-time)</p>
+      </div>
+      <div class="fee-card">
+        <h3>💰 Monthly Tuition</h3>
+        <p>$150 / month</p>
+      </div>
+      <div class="fee-card">
+        <h3>🎉 Event Participation</h3>
+        <p>$50 per event</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CampusConnect | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Navbar toggler
+    const toggler = document.getElementById("toggler");
+    const mobileMenu = document.getElementById("mobileMenu");
+    toggler.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+
+  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 60px;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 25px;
+  font-weight: 500;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #ffcc00;
+  transition: width 0.3s;
+}
+.nav-item a:hover {
+  color: #ffcc00;
+}
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 40px;
+  color: #ff004f;
+  letter-spacing: 1px;
+}
+
+/* Toggler */
+.toggler {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 250px;
+  height: calc(100vh - 70px);
+  padding: 30px;
+  gap: 20px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.mobile-menu a:hover {
+  color: #ff004f;
+}
+.mobile-menu.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 120px 60px 60px;
+  gap: 40px;
+}
+.hero-subtext {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-events {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.hero-events li {
+  font-size: 1rem;
+  color: #ffcc00;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.hero-left {
+  flex: 1;
+}
+.hero-left .tagline {
+  color: #ff004f;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-left p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+.hero-left .tagline {
+  color: #ff004f;
+  font-size: 1.2rem;
+  margin-bottom: 5px;   /* less space */
+  font-weight: bold;
+}
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;  /* less space */
+}
+.animated-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  min-height: 30px; /* reserve space for typing effect */
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #ff004f;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #ff336f;
+  transform: scale(1.05);
+}
+
+/* Hero Images */
+.hero-right {
+  flex: 1;
+  display: grid;
+  gap: 20px;
+}
+.image-box {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+.image-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* events */
+.events {
+  padding: 30px 20px !important;
+  /* background: #fff; */
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #ffcc00;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.event-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 15px;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.event-card p {
+  margin: 0 15px 15px;
+  font-size: 0.95rem;
+}
+
+.event-card button {
+  margin: 10px 15px 20px;
+  padding: 10px 18px;
+  background: #ff004f;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.event-card button:hover {
+  background: #ff004f;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+/* Fees Section */
+.fees {
+  padding: 80px 60px;
+  background: #111;
+  text-align: center;
+}
+.fees h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+.fees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+.fee-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.fee-card h3 {
+  color: #4facfe;
+  margin-bottom: 15px;
+}
+.fee-card p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.fee-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+  .nav-left, .nav-right {
+    display: none;
+  }
+  .toggler {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 600px) {
+  .hero-right {
+    grid-template-columns: 1fr;
+  }
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
+
+.animated-text {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  min-height: 30px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 1s forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Banner/Slider */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.banner .slider {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.banner .slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Navigation dots */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.dots span.active {
+  opacity: 1;
+  background: #ffcc00;
+}
+
+/* banner */
