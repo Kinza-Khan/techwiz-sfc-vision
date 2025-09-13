@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Fest 2025",
+    "description": "Annual technology festival with coding, robotics, and AI competitions.",
+    "date": "2025-09-20",
+    "venue": "Main Auditorium",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Technology", "Coding", "Robotics"],
+    "category": "Academic"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Night",
+    "description": "A night full of music, drama, and cultural performances.",
+    "date": "2025-08-15",
+    "venue": "Open Air Theatre",
+    "image": "https://i.ytimg.com/vi/QIiDdJMZDt0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBMgMCh_MA8=&rs=AOn4CLBWGTuXJhp0AY4l2sFRzmIbfGnF1g",
+    "tags": ["Music", "Drama", "Culture"],
+    "category": "Cultural"
+  },
+  {
+    "id": 3,
+    "title": "Sports Gala",
+    "description": "Inter-department sports competition including cricket, football, and athletics.",
+    "date": "2025-07-10",
+    "venue": "Sports Ground",
+    "image": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Sports", "Competition", "Athletics"],
+    "category": "Sports"
+  },
+  {
+    "id": 4,
+    "title": "AI & Robotics Workshop",
+    "description": "Hands-on workshop on AI, machine learning, and robotics projects.",
+    "date": "2025-10-05",
+    "venue": "Tech Lab 2",
+    "image": "https://media.istockphoto.com/id/911030824/photo/studying-robotic-arm.jpg?s=612x612&w=0&k=20&c=coxfT2Cd4ozH8E62CYIdOP_SIgQ1XIcshFCzL6pyDLQ=",
+    "tags": ["AI", "Robotics", "Workshop"],
+    "category": "Academic"
+  },
+  {
+    "id": 5,
+    "title": "Photography Contest",
+    "description": "Students showcase their photography skills in themed competitions.",
+    "date": "2025-06-25",
+    "venue": "Art Gallery",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Photography", "Art", "Creativity"],
+    "category": "Cultural"
+  },
+  {
+    "id": 6,
+    "title": "Debate Championship",
+    "description": "Inter-college debate competition covering social and technical topics.",
+    "date": "2025-09-12",
+    "venue": "Conference Hall",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Debate", "Public Speaking", "Competition"],
+    "category": "Academic"
+  },
+  {
+    "id": 7,
+    "title": "Music Fest",
+    "description": "Live performances by student bands and solo artists.",
+    "date": "2025-07-28",
+    "venue": "Auditorium Stage",
+    "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Music", "Concert", "Performance"],
+    "category": "Cultural"
+  },
+  {
+    "id": 8,
+    "title": "Entrepreneurship Summit",
+    "description": "Talks and networking with startup founders and industry leaders.",
+    "date": "2025-08-30",
+    "venue": "Seminar Hall",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Entrepreneurship", "Startups", "Networking"],
+    "category": "Academic"
+  },
+  {
+    "id": 9,
+    "title": "Drama Night",
+    "description": "Student theatrical performances with original and classic plays.",
+    "date": "2025-07-15",
+    "venue": "Open Air Theatre",
+    "image": "https://i.ytimg.com/vi/QIiDdJMZDt0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBMgMCh_MA8=&rs=AOn4CLBWGTuXJhp0AY4l2sFRzmIbfGnF1g",
+    "tags": ["Drama", "Theatre", "Performance"],
+    "category": "Cultural"
+  },
+  {
+    "id": 10,
+    "title": "Hackathon 2025",
+    "description": "24-hour coding marathon with prizes for innovative projects.",
+    "date": "2025-09-25",
+    "venue": "Tech Lab 1",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Hackathon", "Coding", "Innovation"],
+    "category": "Academic"
+  },
+  {
+    "id": 11,
+    "title": "Art Exhibition",
+    "description": "Showcasing paintings, sculptures, and digital artwork by students.",
+    "date": "2025-06-20",
+    "venue": "Art Gallery",
+    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/b4fed1c75b65173968bb308f1ff69cb5d5cc2d4851ab6aadefe0f62322e6bbe0",
+    "tags": ["Art", "Exhibition", "Creativity"],
+    "category": "Cultural"
+  },
+  {
+    "id": 12,
+    "title": "Science Fair",
+    "description": "Students present science and technology projects in a competitive environment.",
+    "date": "2025-08-05",
+    "venue": "Main Hall",
+    "image": "https://bpb-us-w2.wpmucdn.com/sites.irvingisd.net/dist/c/2/files/2020/01/7P6A5059-1280x640.jpg",
+    "tags": ["Science", "Technology", "Projects"],
+    "category": "Academic"
+  }
+]

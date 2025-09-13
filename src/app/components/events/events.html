@@ -1,0 +1,42 @@
+<div class="container py-5 mt-5">
+  <app-breadcrumb [crumbs]="[{label:'Home', url:'/'}, {label:'Events', url:'/events'}]"></app-breadcrumb>
+  <h1 class="text-center">All Events</h1>
+
+  <!-- Tabs for categories -->
+  <div class="d-flex justify-content-between align-items-center mt-4 mb-3 flex-wrap">
+    <ul class="nav nav-tabs">
+      <li class="nav-item" *ngFor="let cat of categories">
+        <a class="nav-link" [class.active]="selectedCategory === cat" (click)="selectCategory(cat)">
+          {{ cat }}
+        </a>
+      </li>
+    </ul>
+
+    <!-- Sorting dropdown -->
+    <div class="ms-auto mt-2 mt-md-0">
+      <select class="form-select" [(ngModel)]="sortOrder" (change)="changeSort(sortOrder)">
+        <option value="asc">Date: A → Z</option>
+        <option value="desc">Date: Z → A</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Events Grid -->
+  <div class="row g-4">
+    <div *ngFor="let e of filteredEvents" class="col-md-4">
+      <div class="event-card shadow-lg" [class.upcoming]="isUpcoming(e)">
+        <img *ngIf="e.image" [src]="e.image" class="event-img" alt="{{e.title}}">
+        <div class="event-content p-4">
+          <h5 class="fw-bold">{{ e.title }}</h5>
+          <p class="small">{{ e.date | date:'dd MMM yyyy' }} • {{ e.venue }}</p>
+          <p>{{ e.description | slice:0:120 }}...</p>
+          <a [routerLink]="['/event', e.id]" class="btn btn-sm mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="filteredEvents.length === 0" class="text-center mt-4">
+    <p>No events found in this category.</p>
+  </div>
+</div>

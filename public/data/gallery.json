@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Campus Tech Photo",
+    "description": "Students demoing robotics at Tech Fest.",
+    "date": "2025-09-20",
+    "venue": "Main Auditorium",
+    "type": "photo",
+    "tags": ["tech","robots"],
+    "thumb": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    "src": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Cultural Dance",
+    "description": "A performance from Cultural Night.",
+    "date": "2025-08-15",
+    "venue": "Open Air Theatre",
+    "type": "photo",
+    "tags": ["culture","dance"],
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jQq-du6abbjEYbupLGERw92BdCvai6Mpyg&s",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jQq-du6abbjEYbupLGERw92BdCvai6Mpyg&s"
+  },
+  {
+    "id": 3,
+    "title": "Sports Match",
+    "description": "Action shot from the Sports Gala.",
+    "date": "2025-07-10",
+    "venue": "Sports Ground",
+    "type": "photo",
+    "tags": ["sports"],
+    "thumb": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=800&q=80",
+    "src": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "id": 4,
+    "title": "AI & Robotics Workshop (Demo)",
+    "description": "Robotics demo and ML models showcase.",
+    "date": "2025-10-05",
+    "venue": "Tech Lab 2",
+    "type": "photo",
+    "tags": ["ai","robotics"],
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEs54nyfrupWL2Neh_-n8ianPCdvOWLqoqQA&s",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEs54nyfrupWL2Neh_-n8ianPCdvOWLqoqQA&s"
+  },
+  {
+    "id": 5,
+    "title": "Photography Winners",
+    "description": "Top photos from the Photography Contest.",
+    "date": "2025-06-25",
+    "venue": "Art Gallery",
+    "type": "photo",
+    "tags": ["photography"],
+    "thumb": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+    "src": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "id": 6,
+    "title": "Debate Highlights",
+    "description": "Short clips from Debate Championship.",
+    "date": "2025-09-12",
+    "venue": "Conference Hall",
+    "type": "video",
+    "tags": ["debate","speech"],
+    "thumb": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+    "src": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 7,
+    "title": "Music Fest Live",
+    "description": "Live performances recorded at Music Fest.",
+    "date": "2025-07-28",
+    "venue": "Auditorium Stage",
+    "type": "video",
+    "tags": ["music","live"],
+    "thumb": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80",
+    "src": "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+  },
+  {
+    "id": 8,
+    "title": "Entrepreneur Talks",
+    "description": "Slides & recordings from the Entrepreneurship Summit.",
+    "date": "2025-08-30",
+    "venue": "Seminar Hall",
+    "type": "doc",
+    "tags": ["business"],
+    "thumb": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+    "src": "https://example.com/docs/entrepreneurship-presentation.pdf"
+  },
+  {
+    "id": 9,
+    "title": "Drama Night Poster",
+    "description": "Poster & staged photos from Drama Night.",
+    "date": "2025-07-15",
+    "venue": "Open Air Theatre",
+    "type": "photo",
+    "tags": ["drama"],
+    "thumb": "https://i.ytimg.com/vi/QIiDdJMZDt0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBMgMCh_MA8=&rs=AOn4CLBWGTuXJhp0AY4l2sFRzmIbfGnF1g",
+    "src": "https://i.ytimg.com/vi/QIiDdJMZDt0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGBMgMCh_MA8=&rs=AOn4CLBWGTuXJhp0AY4l2sFRzmIbfGnF1g"
+  },
+  {
+    "id": 10,
+    "title": "Hackathon Projects",
+    "description": "Screenshots and project demos from Hackathon 2025.",
+    "date": "2025-09-25",
+    "venue": "Tech Lab 1",
+    "type": "photo",
+    "tags": ["hackathon","code"],
+    "thumb": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
+  },
+  {
+    "id": 11,
+    "title": "Art Exhibition Catalog",
+    "description": "Catalog and images from the Art Exhibition.",
+    "date": "2025-06-20",
+    "venue": "Art Gallery",
+    "type": "doc",
+    "tags": ["art"],
+    "thumb": "https://cassette.sphdigital.com.sg/image/straitstimes/b4fed1c75b65173968bb308f1ff69cb5d5cc2d4851ab6aadefe0f62322e6bbe0",
+    "src": "https://example.com/docs/art-catalog.pdf"
+  },
+  {
+    "id": 12,
+    "title": "Science Fair Demo",
+    "description": "Prototypes shown at Science Fair.",
+    "date": "2025-08-05",
+    "venue": "Main Hall",
+    "type": "photo",
+    "tags": ["science"],
+    "thumb": "https://bpb-us-w2.wpmucdn.com/sites.irvingisd.net/dist/c/2/files/2020/01/7P6A5059-1280x640.jpg",
+    "src": "https://bpb-us-w2.wpmucdn.com/sites.irvingisd.net/dist/c/2/files/2020/01/7P6A5059-1280x640.jpg"
+  }
+]

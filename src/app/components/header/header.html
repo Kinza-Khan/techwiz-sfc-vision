@@ -1,0 +1,47 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Left: Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-white" routerLink="/">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" height="40" class="me-2" alt="Logo">
+      CampusConnect
+    </a>
+
+    <!-- Center: Links -->
+    <ul class="navbar-nav mx-auto d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link active" routerLink="home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/events">Events</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+       <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/feedback">Feedback</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/sch">Calender</a></li>
+
+    </ul>
+
+    <!-- Right: Search -->
+    <div class="d-flex align-items-center">
+      <button class="btn btn-outline-light rounded-circle me-2">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Collapse -->
+<div class="collapse bg-dark" id="navMobile">
+  <ul class="navbar-nav text-center p-3">
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/events">Events</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/gallery">Gallery</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/contact">Contact</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/feedback">Feedback</a></li>
+     <li class="nav-item"><a class="nav-link" routerLink="/sch">Calender</a></li>
+  </ul>
+</div>
+

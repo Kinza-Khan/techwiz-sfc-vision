@@ -1,0 +1,134 @@
+.feedback-section {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.feedback-section h2 span {
+  color: #FFD700; /* Golden Yellow */
+  font-weight: bold;
+}
+
+.feedback-section p {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.feedback-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Stars */
+.stars {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+/* Emoji Reactions */
+.emojis span {
+  font-size: 1.8rem;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.emojis span:hover {
+  transform: scale(1.2);
+}
+
+/* Button */
+.feedback-form button {
+  background: linear-gradient(to right, #ff0057, #ff4081);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-form button:hover {
+  background: linear-gradient(to right, #ff4081, #ff0057);
+}
+
+/* Recent Feedback */
+.recent-title {
+  margin: 50px 0 20px;
+  font-size: 1.5rem;
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feedback-cards .card {
+  background: #ff0057;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.feedback-cards .card h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.error-msg small {
+  color: red;       /* make errors red */
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Emoji hover */
+.emojis span {
+  font-size: 1.8rem;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.emojis span:hover {
+  transform: scale(1.2);
+}
+
+/* Button */
+.feedback-form button {
+  background: linear-gradient(to right, #ff0057, #ff4081);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-form button:hover {
+  background: linear-gradient(to right, #ff4081, #ff0057);
+}

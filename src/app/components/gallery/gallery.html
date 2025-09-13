@@ -1,0 +1,30 @@
+<div class="gallery-page container py-5 mt-5">
+ <app-breadcrumb [crumbs]="[{label:'Home', url:'/'}, {label:'gallery', url:'/gallery'}]"></app-breadcrumb> 
+
+    <h1 class="text-center mb-5 p-3" >Our Popular Events Gallery</h1>
+
+  <div *ngIf="filtered.length === 0" class="text-center py-5 ">
+    No items to show.
+  </div>
+
+  <div class="grid">
+    <div *ngFor="let it of filtered" class="card">
+      <a [href]="it.src || it.thumb" target="_blank" rel="noopener">
+        <div class="thumb-wrap">
+          <img [src]="it.thumb" [alt]="it.title">
+          <div class="overlay-type" *ngIf="it.type==='video'">▶</div>
+          <div class="overlay-type" *ngIf="it.type==='doc'">📄</div>
+        </div>
+      </a>
+
+      <div class="card-body">
+        <h5>{{ it.title }}</h5>
+        <p class="small" *ngIf="it.date">{{ it.date | date:'dd MMM yyyy' }} • {{ it.venue }}</p>
+        <p class="desc">{{ it.description }}</p>
+        <div class="tags">
+          <span *ngFor="let t of it.tags" class="tag">{{ t }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

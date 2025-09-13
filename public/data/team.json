@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dr. Ayesha Khan",
+    "role": "Principal",
+    "image": "https://ui-avatars.com/api/?name=Ayesha+Khan&size=256"
+  },
+  {
+    "name": "Ali Raza",
+    "role": "Event Coordinator",
+    "image": "https://ui-avatars.com/api/?name=Ali+Raza&size=256"
+  },
+  {
+    "name": "Sara Ahmed",
+    "role": "Student Council President",
+    "image": "https://ui-avatars.com/api/?name=Sara+Ahmed&size=256"
+  },
+  {
+    "name": "Bilal Hussain",
+    "role": "Technical Head",
+    "image": "https://ui-avatars.com/api/?name=Bilal+Hussain&size=256"
+  },
+  {
+    "name": "Maria Sheikh",
+    "role": "Cultural Secretary",
+    "image": "https://ui-avatars.com/api/?name=Maria+Sheikh&size=256"
+  },
+  {
+    "name": "Ahmed Khan",
+    "role": "Sports Captain",
+    "image": "https://ui-avatars.com/api/?name=Ahmed+Khan&size=256"
+  }
+]

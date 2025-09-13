@@ -1,0 +1,48 @@
+<div class="container mt-5 p-5">
+  <app-breadcrumb [crumbs]="breadcrumbs"></app-breadcrumb>
+
+  <div *ngIf="event" class="event-detail container py-4">
+    <div class="row  r1">
+      <!-- Left: Image -->
+      <div class="col-md-6">
+        <img [src]="event.image" alt="{{ event.title }}" class="img-fluid rounded shadow-sm">
+      </div>
+
+      <!-- Right: Details -->
+      <div class="col-md-6">
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.description }}</p>
+        <p><strong>Date:</strong> {{ event.date | date:'dd MMM yyyy' }}</p>
+        <p><strong>Venue:</strong> {{ event.venue }}</p>
+
+        <!-- Reviews Section -->
+        <div class="reviews mt-4 p-3  ">
+          <h5 class="mb-3">Reviews</h5>
+          <div class="review mb-3">
+            <p class="mb-1"><strong>Ali Khan</strong> ⭐⭐⭐⭐☆</p>
+            <p class=" small">"Great event! Very well organized and informative."</p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Events Section -->
+    <div class="related-events mt-5">
+      <h3 class="mb-4">Related Events</h3>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let ev of relatedEvents">
+          <div class="card shadow-sm h-100">
+            <img [src]="ev.image" alt="{{ ev.title }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{ ev.title }}</h5>
+              <p class="card-text small ">{{ ev.date | date:'dd MMM yyyy' }} • {{ ev.venue }}</p>
+              <p class="card-text">{{ ev.description | slice:0:80 }}...</p>
+              <a [routerLink]="['/events', ev.id]" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

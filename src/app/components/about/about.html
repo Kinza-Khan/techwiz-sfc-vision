@@ -1,0 +1,76 @@
+<div class="about-page container py-5 mt-5">
+  <app-breadcrumb [crumbs]="[{label:'Home', url:'/'}, {label:'About', url:'/about'}]"></app-breadcrumb> 
+
+  <h1 class="text-center mb-5 fw-bold display-5">About Our College</h1>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision py-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-lg p-4 h-100 border-0 mission-card">
+          <div class="icon-wrap mb-3 text-center">
+            🎯
+          </div>
+          <h3 class="fw-bold mb-3 text-center">Our Mission</h3>
+          <p class="text-justify">
+            To empower students by providing a platform that simplifies event discovery, management, and participation, making campus life more engaging and inclusive.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg p-4 h-100 border-0 vision-card">
+          <div class="icon-wrap mb-3 text-center">
+            🚀
+          </div>
+          <h3 class="fw-bold mb-3 text-center">Our Vision</h3>
+          <p class="text-justify">
+            To become the go-to digital hub for all campus-related activities, fostering collaboration, creativity, and growth within student communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats text-center py-5 my-5 rounded-4 shadow-lg">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <h2 class="fw-bold display-6">150+</h2>
+        <p class="text-uppercase small">Events Organized</p>
+      </div>
+      <div class="col-md-3">
+        <h2 class="fw-bold display-6">5000+</h2>
+        <p class="text-uppercase small">Students Connected</p>
+      </div>
+      <div class="col-md-3">
+        <h2 class="fw-bold display-6">50+</h2>
+        <p class="text-uppercase small">Clubs & Societies</p>
+      </div>
+      <div class="col-md-3">
+        <h2 class="fw-bold display-6">10+</h2>
+        <p class="text-uppercase small">Years of Impact</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-6">Meet Our Team</h2>
+      <p class="Passionate">Passionate people behind the success of our campus events</p>
+    </div>
+    <div class="row g-4">
+      <div *ngFor="let member of team" class="col-md-4">
+        <div class="card shadow-lg h-100 team-card border-0">
+          <div class="team-img-wrap">
+            <img [src]="member.image" class="team-img rounded-circle" alt="{{member.name}}">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="fw-bold">{{member.name}}</h5>
+            <p class="">{{member.role}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

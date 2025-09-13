@@ -1,0 +1,86 @@
+:host { 
+  display: block; 
+  height: 100vh; 
+  width: 100vw; 
+}
+
+.cover-root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://source.unsplash.com/1600x900/?college,classroom'); 
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* background کو dark کرنے کے لئے */
+}
+
+.card {
+  position: relative; /* overlay سے اوپر */
+  z-index: 2;
+  width: 460px;
+  max-width: calc(100% - 40px);
+  padding: 34px 30px;
+  background: rgba(20,20,20,0.75);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #f2c94c; /* heading color */
+}
+
+.title {
+  margin: 0 0 6px 0;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.brand {
+  color: #f4c542;
+}
+
+.subtitle {
+  margin: 0 0 20px 0;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn {
+  background: linear-gradient(180deg,#c01a52,#b00e4a);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 28px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(176,0,74,0.25);
+}
+
+.btn:active { 
+  transform: translateY(1px); 
+}
+
+@media (max-width: 600px){
+  .card{ 
+    width: 92%; 
+    padding: 22px; 
+  }
+  .title{ 
+    font-size: 22px; 
+  }
+}

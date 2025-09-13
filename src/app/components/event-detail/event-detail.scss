@@ -1,0 +1,60 @@
+.col-md-6{
+  color: white;
+}
+.r1{
+  background-color: #1a1a1a !important;
+  padding: 50px 40px;
+
+
+}
+.reviews{
+  color: white;
+}
+
+.event-detail {
+  .tags .badge {
+    font-size: 0.9rem;
+    padding: 0.6em 1em;
+    border-radius: 50px;
+    color: white;
+  }
+
+  img {
+    max-height: 450px;
+    object-fit: cover;
+  }
+}
+.reviews {
+  // background: #f9f9f9;
+  // border-left: 4px solid #ffc107;
+}
+
+.review {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  color: white;
+}
+.review:last-child {
+  border-bottom: none;
+  color: white;
+}
+
+
+.related-events .card {
+  transition: transform 0.2s ease-in-out;
+  background-color: #1a1a1a !important;
+  // box-shadow: 2px 2px 4px 5px rgb(118, 113, 113);
+}
+.related-events .card:hover {
+  transform: translateY(-5px);
+}
+h3{
+  color: #ffc107 !important;
+}
+.related-events .card{
+  color: white;
+}
+.related-events .card .btn{
+      background: linear-gradient(45deg, #ff6ec7, #ffc107);
+
+}
