@@ -1,16 +1,12 @@
-<div class="cover-root">
-<div class="overlay"></div>
+<div class="cover-container">
+  <div class="overlay">
+    <div class="cover-box">
+      <h1 class="title">Welcome to <span>CampusConnect</span></h1>
+      <p class="subtitle">Please select your role to continue</p>
 
-
-<div class="card">
-<h2 class="title">Welcome to<br><span class="brand">CampusConnect</span></h2>
-<p class="subtitle">Please select your role to continue</p>
-
-
-<div class="buttons">
-<button class="btn" (click)="onSelect('student')">🎓 Student</button>
-<button class="btn" (click)="onSelect('faculty')">👩‍🏫 Faculty</button>
-<button class="btn" (click)="onSelect('visitor')">👤 Visitor</button>
-</div>
-</div>
+      <button class="role-btn student" (click)="setRole('Student')">Student</button>
+      <button class="role-btn faculty" (click)="setRole('Faculty')">Faculty</button>
+      <button class="role-btn visitor" (click)="setRole('Visitor')">Visitor</button>
+    </div>
+  </div>
 </div>

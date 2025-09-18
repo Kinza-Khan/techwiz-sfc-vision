@@ -11,7 +11,7 @@
 }
 
 .feedback-section p {
-  color: #bbb;
+  color: white !important;
   margin-bottom: 30px;
 }
 
@@ -57,7 +57,8 @@
 
 /* Button */
 .feedback-form button {
-  background: linear-gradient(to right, #ff0057, #ff4081);
+  // background: linear-gradient(to right, #ff0057, #ff4081);
+  background: linear-gradient(45deg, #ffc107, #ff6ec7)!important;
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -68,13 +69,15 @@
 }
 
 .feedback-form button:hover {
-  background: linear-gradient(to right, #ff4081, #ff0057);
+  // background: linear-gradient(to right, #ff4081, #ff0057);
+  background: linear-gradient(45deg, #ffc107, #ff6ec7);
 }
 
 /* Recent Feedback */
 .recent-title {
   margin: 50px 0 20px;
   font-size: 1.5rem;
+  color: white;
 }
 
 .feedback-cards {
@@ -85,8 +88,8 @@
 }
 
 .feedback-cards .card {
-  background: #ff0057;
-  color: #fff;
+  background: linear-gradient(45deg, #ffc107, #ff6ec7);
+  color: black;
   padding: 20px;
   border-radius: 15px;
   max-width: 250px;
@@ -95,6 +98,7 @@
 .feedback-cards .card h4 {
   margin-bottom: 10px;
   font-weight: bold;
+  color: white;
 }
 .error-msg small {
   color: red;       /* make errors red */
@@ -103,6 +107,9 @@
   margin-bottom: 10px;
   font-size: 0.9rem;
   text-align: left;
+}
+p{
+  color: black !important;
 }
 
 /* Emoji hover */

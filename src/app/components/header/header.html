@@ -1,3 +1,12 @@
+<div class="mini-header d-flex justify-content-between align-items-center px-3 py-2">
+  <span>{{ welcomeMessage }}</span>
+
+  <!-- Logout Button -->
+  <button class="btn btn-sm btn-outline-light d-flex align-items-center" (click)="logout()">
+    <i class="bi bi-box-arrow-right me-1"></i> Logout
+  </button>
+</div>
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top glass-nav">
   <div class="container d-flex justify-content-between align-items-center">
@@ -13,35 +22,33 @@
       <li class="nav-item"><a class="nav-link" routerLink="/events">Events</a></li>
       <li class="nav-item"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
       <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
-       <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
       <li class="nav-item"><a class="nav-link" routerLink="/feedback">Feedback</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/sch">Calender</a></li>
-
+      <li class="nav-item"><a class="nav-link" routerLink="/calender">Calendar</a></li>
     </ul>
 
     <!-- Right: Search -->
     <div class="d-flex align-items-center">
-      <button class="btn btn-outline-light rounded-circle me-2">
+      <button class="btn btn-outline-light rounded-circle me-2" >
         <i class="bi bi-search"></i>
       </button>
     </div>
 
     <!-- Mobile menu -->
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"   aria-expanded="false">
+      <span class="navbar-toggler-icon "></span>
     </button>
   </div>
 </nav>
 
 <!-- Mobile Collapse -->
-<div class="collapse bg-dark" id="navMobile">
+<div class="collapse" id="navMobile">
   <ul class="navbar-nav text-center p-3">
-    <li class="nav-item"><a class="nav-link text-white" routerLink="/">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="home">Home</a></li>
     <li class="nav-item"><a class="nav-link text-white" routerLink="/events">Events</a></li>
     <li class="nav-item"><a class="nav-link text-white" routerLink="/gallery">Gallery</a></li>
     <li class="nav-item"><a class="nav-link text-white" routerLink="/contact">Contact</a></li>
     <li class="nav-item"><a class="nav-link text-white" routerLink="/feedback">Feedback</a></li>
-     <li class="nav-item"><a class="nav-link" routerLink="/sch">Calender</a></li>
+    <li class="nav-item"><a class="nav-link text-white" routerLink="/calender">Calendar</a></li>
   </ul>
 </div>
-

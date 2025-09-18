@@ -12,7 +12,7 @@ import { NotFound } from './components/not-found/not-found';
 import { Cover } from './components/cover/cover';
 import { Calender } from './components/calender/calender';
 import { scheduleArray } from 'rxjs/internal/scheduled/scheduleArray';
-import { Sechdule } from './components/sechdule/sechdule';
+
 
 export const routes: Routes = [
   { path: '', component:Cover },
@@ -26,6 +26,6 @@ export const routes: Routes = [
   { path: 'feedback', component: Feedback },
   { path: 'about', component: About },
   {path:'calender',component:Calender},
-    { path: '**', component: NotFound },
-    {path:'sch' , component:Sechdule}
-];
+    { path: '**', component: NotFound }
+  
+]

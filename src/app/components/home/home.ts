@@ -11,7 +11,7 @@ import { EventsI } from '../../models/events-i.model';
   templateUrl: './home.html',
   styleUrls: ['./home.scss']
 })
-export class Home implements OnInit, AfterViewInit {
+export class Home implements OnInit {
   upcomingEvents: EventsI[] = [];
   pastEvents: EventsI[] = [];
 
@@ -45,51 +45,51 @@ export class Home implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit(): void {
-    this.renderer.listen(this.nextBtn.nativeElement, 'click', () => this.showSlider('next'));
-    this.renderer.listen(this.prevBtn.nativeElement, 'click', () => this.showSlider('prev'));
+  // ngAfterViewInit(): void {
+  //   this.renderer.listen(this.nextBtn.nativeElement, 'click', () => this.showSlider('next'));
+  //   this.renderer.listen(this.prevBtn.nativeElement, 'click', () => this.showSlider('prev'));
 
-    this.runNextAuto = setTimeout(() => {
-      this.nextBtn.nativeElement.click();
-    }, this.timeAutoNext);
+  //   this.runNextAuto = setTimeout(() => {
+  //     this.nextBtn.nativeElement.click();
+  //   }, this.timeAutoNext);
 
-    this.resetTimeAnimation();
-  }
+  //   this.resetTimeAnimation();
+  // }
 
-  resetTimeAnimation() {
-    const el = this.runningTime.nativeElement as HTMLElement;
-    this.renderer.setStyle(el, 'animation', 'none');
-    el.offsetHeight;
-    this.renderer.removeStyle(el, 'animation');
-    this.renderer.setStyle(el, 'animation', 'runningTime 3s linear 1 forwards');
-  }
+  // resetTimeAnimation() {
+  //   const el = this.runningTime.nativeElement as HTMLElement;
+  //   this.renderer.setStyle(el, 'animation', 'none');
+  //   el.offsetHeight;
+  //   this.renderer.removeStyle(el, 'animation');
+  //   this.renderer.setStyle(el, 'animation', 'runningTime 3s linear 1 forwards');
+  // }
 
-  showSlider(type: 'next' | 'prev') {
-    const listEl = this.list.nativeElement as HTMLElement;
-    const items = listEl.querySelectorAll('.item');
+  // showSlider(type: 'next' | 'prev') {
+  //   const listEl = this.list.nativeElement as HTMLElement;
+  //   const items = listEl.querySelectorAll('.item');
 
-    if (items.length === 0) return;
+  //   if (items.length === 0) return;
 
-    if (type === 'next') {
-      this.renderer.appendChild(listEl, items[0]);
-      this.renderer.addClass(this.carousel.nativeElement, 'next');
-    } else {
-      this.renderer.insertBefore(listEl, items[items.length - 1], items[0]);
-      this.renderer.addClass(this.carousel.nativeElement, 'prev');
-    }
+  //   if (type === 'next') {
+  //     this.renderer.appendChild(listEl, items[0]);
+  //     this.renderer.addClass(this.carousel.nativeElement, 'next');
+  //   } else {
+  //     this.renderer.insertBefore(listEl, items[items.length - 1], items[0]);
+  //     this.renderer.addClass(this.carousel.nativeElement, 'prev');
+  //   }
 
-    clearTimeout(this.runTimeOut);
+  //   clearTimeout(this.runTimeOut);
 
-    this.runTimeOut = setTimeout(() => {
-      this.renderer.removeClass(this.carousel.nativeElement, 'next');
-      this.renderer.removeClass(this.carousel.nativeElement, 'prev');
-    }, this.timeRunning);
+  //   this.runTimeOut = setTimeout(() => {
+  //     this.renderer.removeClass(this.carousel.nativeElement, 'next');
+  //     this.renderer.removeClass(this.carousel.nativeElement, 'prev');
+  //   }, this.timeRunning);
 
-    clearTimeout(this.runNextAuto);
-    this.runNextAuto = setTimeout(() => {
-      this.nextBtn.nativeElement.click();
-    }, this.timeAutoNext);
+  //   clearTimeout(this.runNextAuto);
+  //   this.runNextAuto = setTimeout(() => {
+  //     this.nextBtn.nativeElement.click();
+  //   }, this.timeAutoNext);
 
-    this.resetTimeAnimation();
-  }
+  //   this.resetTimeAnimation();
+  // }
 }

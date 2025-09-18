@@ -1,86 +1,76 @@
-:host { 
-  display: block; 
-  height: 100vh; 
-  width: 100vw; 
+.cover-container {
+  height: 100vh;
+  width: 100%;
+  background: url('https://cdn.prod.website-files.com/620e4101b2ce12a1a6bff0e8/65e80f722774b7ae68fbecdb_samantha-gades-fIHozNWfcvs-unsplash%20(1).jpg')
+              no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cover-root {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url('https://source.unsplash.com/1600x900/?college,classroom'); 
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55); /* background کو dark کرنے کے لئے */
+  background: rgba(0, 0, 0, 0.5); /* dark layer for text visibility */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  position: relative; /* overlay سے اوپر */
-  z-index: 2;
-  width: 460px;
-  max-width: calc(100% - 40px);
-  padding: 34px 30px;
-  background: rgba(20,20,20,0.75);
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+.cover-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 40px;
+  border-radius: 15px;
+  max-width: 420px;
+  width: 100%;
   text-align: center;
-  color: #f2c94c; /* heading color */
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
 .title {
-  margin: 0 0 6px 0;
-  font-size: 30px;
-  line-height: 1.05;
-  font-weight: 700;
-}
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
 
-.brand {
-  color: #f4c542;
+  span {
+    color: #ffeb3b;
+  }
 }
 
 .subtitle {
-  margin: 0 0 20px 0;
-  color: rgba(255,255,255,0.8);
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #ddd;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.btn {
-  background: linear-gradient(180deg,#c01a52,#b00e4a);
+.role-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
   border: none;
-  padding: 12px 18px;
-  border-radius: 28px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(176,0,74,0.25);
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+
+  &.student { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+  &.faculty { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+  &.visitor { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    opacity: 0.9;
+  }
 }
 
-.btn:active { 
-  transform: translateY(1px); 
-}
-
-@media (max-width: 600px){
-  .card{ 
-    width: 92%; 
-    padding: 22px; 
-  }
-  .title{ 
-    font-size: 22px; 
-  }
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
