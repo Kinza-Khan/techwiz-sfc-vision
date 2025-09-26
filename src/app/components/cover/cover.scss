@@ -60,9 +60,14 @@
   transition: all 0.3s ease-in-out;
   color: #fff;
 
-  &.student { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
-  &.faculty { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
-  &.visitor { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+  // &.student { background:  }
+  // &.faculty { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+  // &.visitor { background: linear-gradient(45deg, #ffc107, #ff6ec7); }
+
+
+   &.student { background: #ff004f }
+   &.faculty { background:  #ff004f}
+   &.visitor { background: #ff004f }
 
   &:hover {
     transform: translateY(-2px) scale(1.02);

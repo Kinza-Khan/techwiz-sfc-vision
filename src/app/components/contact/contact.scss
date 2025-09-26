@@ -68,14 +68,15 @@ form .is-invalid {
    
 
     .btn {
-      background: linear-gradient(45deg, #ffc107, #ff6ec7);
+      background: #ff004f;
       border: none;
       border-radius: 8px;
       font-weight: 600;
       transition: all 0.3s;
+      padding: 10px 10px !important;
 
       &:hover {
-        background: linear-gradient(45deg, #ffc107, #ff6ec7);
+        background: #ff004f;
         transform: scale(1.02);
       }
     }

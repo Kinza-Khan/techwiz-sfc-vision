@@ -58,7 +58,7 @@
 /* Button */
 .feedback-form button {
   // background: linear-gradient(to right, #ff0057, #ff4081);
-  background: linear-gradient(45deg, #ffc107, #ff6ec7)!important;
+  background: #ff004f !important;
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -70,7 +70,7 @@
 
 .feedback-form button:hover {
   // background: linear-gradient(to right, #ff4081, #ff0057);
-  background: linear-gradient(45deg, #ffc107, #ff6ec7);
+  background: #ff004f;
 }
 
 /* Recent Feedback */
@@ -88,7 +88,7 @@
 }
 
 .feedback-cards .card {
-  background: linear-gradient(45deg, #ffc107, #ff6ec7);
+  background: #ff004f;
   color: black;
   padding: 20px;
   border-radius: 15px;
@@ -126,7 +126,7 @@ p{
 
 /* Button */
 .feedback-form button {
-  background: linear-gradient(to right, #ff0057, #ff4081);
+  background: #ff004f;
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -137,5 +137,5 @@ p{
 }
 
 .feedback-form button:hover {
-  background: linear-gradient(to right, #ff4081, #ff0057);
+  background: #ff004f;
 }

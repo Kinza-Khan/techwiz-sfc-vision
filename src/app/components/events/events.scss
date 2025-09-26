@@ -16,7 +16,7 @@
     display: block;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #ff6ec7, #ffc107);
+    background: #ff004f;
     margin: 8px auto 0;
     border-radius: 2px;
   }
@@ -43,7 +43,7 @@ h1,h2{
     }
 
     .btn {
-      background: linear-gradient(45deg, #ff6ec7, #ffc107);
+      background: #ff004f;
       color: #fff;
       border: none;
    
@@ -90,7 +90,7 @@ h1,h2{
     position: absolute;
     top: 12px;
     right: 12px;
-    background: linear-gradient(90deg, #ff6ec7, #ffc107);
+    background: #ff004f;
     color: #fff;
     font-weight: 700;
     padding: 0.3rem 0.6rem;
@@ -103,7 +103,7 @@ h1,h2{
 
 
 .nav-tabs .nav-link .active {
-  background: linear-gradient(90deg, #ff6ec7, #ffc107);
+  background: #ff004f;
   // color: #fff !important;
   background-color: none !important;
   font-weight: 600;
