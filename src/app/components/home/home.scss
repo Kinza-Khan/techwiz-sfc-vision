@@ -113,21 +113,25 @@
 
     opacity: 0;
     animation: animate 1s ease-in-out 1.2s 1 forwards;
+    border:  none;
 }
 
-.content .btn button{
+.content .btn a{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border: 2px solid #fff;
+    text-decoration: none;
+    color: white;
+    // margin-left: 10px;
 }
 
-.content .btn button:nth-child(1){
+.content .btn a:nth-child(1){
     margin-right: 15px;
 }
 
-.content .btn button:nth-child(2){
+.content .btn a:nth-child(2){
     background: transparent;
     color: yellow;
     border: 2px solid #fff;
@@ -135,7 +139,7 @@
     color: black;
 }
 
-.content .btn button:nth-child(2):hover{
+.content .btn a:nth-child(2):hover{
     background-color: yellow;
     color: black;
     border-color: yellow;
@@ -298,8 +302,12 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
+    color: white !important;
   }
 
+ #ab{
+    color: whitesmoke !important;
+  }
   .highlight {
     font-weight: 600;
     color: #ffc107;
